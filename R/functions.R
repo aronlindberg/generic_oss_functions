@@ -43,7 +43,7 @@ read_seqdata_notime <- function(data, startdate, stopdate){
   (data)
 }
 
-# Function for opening network data for processinr
+# Function for opening network data for processing
 read_seqdata_for_network <- function(data, startdate, stopdate){
   data <- read.table(data, sep = ",", header = TRUE)
   data <- subset(data, select = c("pull_req_id", "user", "action", "created_at"))
